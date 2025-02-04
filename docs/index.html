@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="./favicon.ico" />
+    <title>FAQ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: stretch;
+        font-family: "Outfit", sans-serif;
+      }
+      .header {
+        height: 75px;
+        background: #216FF5;
+      }
+      h1.page-header {
+        text-align: center;
+        font-size: 48px;
+      }
+      .main {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+      }
+      .content {
+        flex: 3;
+        margin: 10px 40px;
+        max-width: calc(100vw - 400px);
+      }
+      .content h2,
+      .content h3,
+      .content strong {
+        color: #216FF5;
+      }
+      .content h1 {
+        margin: 0;
+      }
+      .content h2 {
+        color: #0D49A0;
+        font-size: 32px;
+        text-transform: uppercase;
+        margin: 20px auto;
+      }
+      .content h3 {
+        font-size: 28px;
+        margin-bottom: 5px;
+      }
+      .content p {
+        font-size: 20px;
+      }
+      .content .section-header {
+        text-align: center;
+        border-top: 1px solid #e2e2e2;
+        border-bottom: 1px solid #e2e2e2;
+        padding: 20px 0;
+      }
+      .sidebar {
+        flex: 1;
+        align-self: flex-start;
+        padding: 0 10px 20px 10px;
+        background: #edf3ff;
+        border: 1px solid #e2e2e2;
+        border-radius: 20px;
+        margin: 4vh 10px;
+        position: fixed;
+        width: 250px;
+        left: calc(100vw - 300px);
+        height: 80vh;
+        overflow-y: scroll;
+      }
+      .sidebar h2 {
+        text-align: center;
+        color: #0D49A0;
+      }
+      .sidebar ul {
+        margin: 0;
+        padding: 0;
+      }
+      .sidebar ul li {
+        list-style-type: none;
+        margin: 10px 0;
+      }
+      .footer {
+        height: 100px;
+        background: #edf3ff;
+        text-align: center;
+        color: #0D49A0;
+      }
+      .header .logo img {
+        margin: 10px 20px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="./assets/Logo_White.svg" alt="logo" />
+      </div>
+    </div>
+    <div class="main">
+      <div class="content">
+        <h1 class="page-header">FAQ</h1>
+        <h2 id="account-section" class="section-header">Account login and billing</h2>
+        <h3 id="account">How do I set up my account?</h3>
+        <span><p>You will receive setup instructions from a Crowdwave team member.  If you have any issues getting started, please email <a href="mailto:support@crowdwave.ai">support@crowdwave.ai</a></p></span>
+        <h3 id="signout"3>How do I sign out of my account?</h3>
+        <span><p>In the top right of any page you will see your user icon. Clicking on that will reveal the logout button.</p></span>
+        <h3 id="forgot-password">How do I retrieve a forgotten password?</h3>
+        <span><p>Navigate to the login screen. At the bottom, select 'Forgot password.' A link with instructions on how to reset your password will be emailed to you. Don't forget to check your spam folder.</p></span>
+        <h3 id="support">How do I contact support?</h3>
+        <span><p>The quickest way to get support is to email us directly at <a href="mailto:support@crowdwave.ai">support@crowdwave.ai</a> and one of our team members will assist you with your inquiry.</p></span>
+        <h3 id="billing">How do I change my billing details?</h3>
+        <span><p>Please email <a href="mailto:support@crowdwave.ai">support@crowdwave.ai</a> and we will update your billing information</p></span>
+        <h3 id="cancel">How do I cancel my plan?</h3>
+        <span><p>Please email <a href="mailto:support@crowdwave.ai">support@crowdwave.ai</a> and we will cancel your subscription</p></span>
+        <h2 id="crowdwave-section" class="section-header">How to use Crowdwave</h2>
+        <h3 id="survey-setup">Setting up your first survey</h3>
+        <span><p>Watch <a href="https://www.youtube.com/watch?v=6ZYcU683WLc" target="_blank">this video</a> for a full walk-through of setting up your first survey.</p></span>
+        <h3 id="single-choice">How do I ask great single choice questions?</h3>
+        <span>
+          <p>For single choice questions:</p>
+          <p>Clearly define what each choice means, how they differ from each other, and if there is an implicit order in the choices.</p>
+          <p>Here is an example of a <strong>GOOD</strong>&nbsp; question:</p>
+          <ul>
+            <li>
+              <p>“Which of the following best describes your level of expertise with your company's primary communication & collaboration platform? Novice, Intermediate, Advanced, Expert, Authority”</p>
+            </li>
+          </ul>
+          <p>Here is an example of a <strong>BETTER</strong>&nbsp; question:</p>
+          <ul>
+            <li>
+              <p>“Which of the following (listed in order from least expertise to most expertise) best describes your level of expertise with your company's primary communication & collaboration platform? Novice, Intermediate, Advanced, Expert, Authority”</p>
+            </li>
+          </ul>
+          <p>Here is an example of the <strong>BEST</strong>&nbsp; way to ask this question:</p>
+          <ul>
+            <li>
+              <p>"Which of the following (listed in order from least expertise to most expertise) best describes your level of expertise with your company's primary communication & collaboration platform? Novice (little or no experience), Intermediate (somewhat regular user), Advanced (everyday user), Expert (specialized or technical knowledge that others would go to for advice or training), Authority (capable of writing a book on it)"</p>
+            </li>
+          </ul>
+        </span>
+        <h3 id="multi-choice">How do I ask great multiple choice questions?</h3>
+        <span>
+          <p>For multi-choice/categorical questions, it's best if there is no overlap between options and an “other” option is included if needed.</p>
+          <p>Clearly define what each choice means, how they differ from each other, and if there is an implicit order in the choices.</p>
+          <p>Here is an example of a <strong>GOOD</strong>&nbsp; question:</p>
+          <ul>
+            <li>
+              <p>“Do you rent or own the place where you live? Rent, Own”</p>
+            </li>
+          </ul>
+          <p>Here is an example of a <strong>BETTER</strong>&nbsp; question:</p>
+          <ul>
+            <li>
+              <p>“Do you rent or own the place where you live? Rent, Own, Other”</p>
+            </li>
+          </ul>
+          <p>Here is an example of the <strong>BEST</strong>&nbsp; way to ask this question:</p>
+          <ul>
+            <li>
+              <p>"Which of the following best describes your current living arrangement? Rent, Own, Paid for by parents, Other"</p>
+            </li>
+          </ul>
+        </span>
+        <h3 id="numeric-rating">How do I ask great numeric rating questions?</h3>
+        <span>
+          <p>For numeric ratings, feel free to explain what the rating means and the kind of feeling each point on the scale represents.</p>
+          <p>Here is an example of a <strong>GOOD</strong>&nbsp; question:</p>
+          <ul>
+            <li>
+              <p>“On a scale of 1 to 5, rate your satisfaction with your lawn mower.”</p>
+            </li>
+          </ul>
+          <p>Here is an example of a <strong>BETTER</strong>&nbsp; question:</p>
+          <ul>
+            <li>
+              <p>“On a scale of 1 to 5 (with 1 representing complete dissatisfaction and 5 representing satisfaction in every way), rate your satisfaction with your lawn mower.”</p>
+            </li>
+          </ul>
+          <p>Here is an example of the <strong>BEST</strong>&nbsp; way to ask this question:</p>
+          <ul>
+            <li>
+              <p>"On a scale of 1 to 5, rate your satisfaction with your lawn mower (1 = completely dissatisfied, 2 = somewhat dissatisfied, 3 = neutral opinion, 4 = mostly satisfied, 5 = completely satisfied)."</p>
+            </li>
+          </ul>
+        </span>
+        <h3 id="unexpected-results">Tips to navigate unexpected results</h3>
+        <span>
+          <p>If you see results that don't make sense to you or are hard to interpret, there are a few steps you can take to improve them:</p>
+          <ol>
+            <li>
+              <p><strong>Try reframing the question:</strong>&nbsp;Like real humans, the simulator can get confused by ambiguous questions, sometimes in different ways than humans would. Try re-writing your question to be more specific.</p>
+            </li>
+            <li>
+              <p><strong>Combine or split up questions:</strong>&nbsp;The simulator interprets multi-part questions somewhat differently than humans; you may want to split questions up for clarity, or combine a follow-up with an initial question if the follow-up is asking for logic or rationale.</p>
+            </li>
+            <li>
+              <p><strong>Specify output:</strong>&nbsp;Sometimes the simulator responds as if the survey is being conducted out loud, as a conversation, and includes reasoning or extra details. If you don't want these, specify so.</p>
+            </li>
+            <li>
+              <p><strong>Contact Support:</strong>&nbsp;Reach out to us! We're happy to help you, and it helps us to see where the simulator is behaving differently than you expect. Email at <a href="mailto:support@crowdwave.ai">support@crowdwave.ai</a></p>
+            </li>
+          </ol>
+        </span>
+        <h3 id="crowdwave-strengths">Areas where Crowdwave is strong</h3>
+        <span>
+          <ol>
+            <li>
+              <p>Questions about desires, perceptions, and opinions.</p>
+            </li>
+            <li>
+              <p>Questions about engagement and communication.</p>
+            </li>
+            <li>
+              <p>When asked to rate items, gets the correct order across them.</p>
+            </li>
+            <li>
+              <p>Won't get human fatigue during longer surveys.</p>
+            </li>
+            <li>
+              <p>Responds well to longer, more context-filled questions.</p>
+            </li>
+            <li>
+              <p>Responds well to high specificity in audience and segment.</p>
+            </li>
+          </ol>
+        </span>
+        <h3 id="crowdwave-value">Areas where Crowdwave is valuable</h3>
+        <span>
+          <ol>
+            <li>
+              <p>Questions about product usage and consumer behavior, where the simulator is a little less extreme than human respondents.</p>
+            </li>
+            <li>
+              <p>Questions about reasons and motivations, where the simulator gives typical human answers but a higher proportion of creative answers.</p>
+            </li>
+            <li>
+              <p>Raw satisfaction scores and ratings, which match human responses relative to each other but tend to be more critical overall.</p>
+            </li>
+            <li>
+              <p>Multiple-choice questions with a large number of options.</p>
+            </li>
+          </ol>
+        </span>
+        <h3 id="crowdwave-less-accurate">Areas where Crowdwave will be less accurate</h3>
+        <span>
+          <ol>
+            <li>
+              <p>Questions that ask for a freeform text response for which the answer comes from a “long tail” distribution in a specific category (eg: model of your car, city of residence, your favorite novel or movie, etc.) where the simulator tends to provide common answers too often.</p>
+            </li>
+            <li>
+              <p>Questions about high-profile events with substantial media coverage (eg: impact of COVID), political events, or recent events.Item description</p>
+            </li>
+          </ol>
+        </span>
+        <h2 id="application-section" class="section-header">Crowdwave Applications</h2>
+        <h3 id="crowdwave-uses">What can I use Crowdwave for?</h3>
+        <span>
+          <p>Crowdwave has numerous applications, with new use cases being discovered by our community every day. Here are some examples to help you get started:</p>
+          <ol>
+            <li>
+              <p><strong>Pre-testing:</strong>&nbsp; Before launching a real-world survey, use Crowdwave to test various scenarios. This includes refining or discovering new segments and audiences, testing different question sets, or optimizing question language for your intended audience.</p>
+            </li>
+            <li>
+              <p><strong>A/B testing:</strong>&nbsp; Run A/B tests for different versions of your go-to-market (GTM) strategy, branding, or creative messages on the same or different audiences to minimize risk in your marketing campaigns.</p>
+            </li>
+            <li>
+              <p><strong>Gaining insights on hard-to-reach segments:</strong>&nbsp; Crowdwave allows you to gather insights from segments that are typically difficult to access in the real world.</p>
+            </li>
+            <li>
+              <p><strong>Asking sensitive questions:</strong>&nbsp; Explore sensitive questions that might be difficult to ask in traditional surveys.</p>
+            </li>
+            <li>
+              <p><strong>Testing risky ideas:</strong>&nbsp; Safely test risky ideas and scenarios without affecting your brand's reputation.</p>
+            </li>
+          </ol>
+        </span>
+        <h3 id="client-uses">How our clients use Crowdwave</h3>
+        <span>
+          <p>Click <a href="https://www.crowdwave.ai/case-study/robyn-bolton" target="_blank">here</a> to see our case studies</p>
+        </span>
+        <h2 id="accuracy-section" class="section-header">How Crowdwave works, accuracy and how it's measured</h2>
+        <h3 id="what-is-crowdwave">What is Crowdwave?</h3>
+        <span>
+          <p>Crowdwave is an AI-driven audience simulator tool that enables clients to conduct market research using Large Language Models (LLMs) to create surveys that mimic real human responses. By leveraging GPT and other LLMs, Crowdwave can simulate any audience or segment from the real world. Clients input specific questions, and Crowdwave delivers responses that reflect the behaviors and preferences of their chosen target audience or segment.</p>
+          <p>Crowdwave provides several key benefits for market research:</p>
+          <p><strong>Precision of results:</strong>&nbsp; Specialized prompts, personas and layered instructions, are used to ensure the results accurately represent real world audiences and deliver on the clients' research objectives.</p>
+          <p><strong>Scale and diversity of results:</strong>&nbsp; The ability to enter hundreds or thousands of respondents, when creating a survey enables a more diverse response set that is statistically significant with a high level of diversity compared to manually querying LLMs such as GPT directly where it requires considerable manual work and time to attempt to get a diverse set of responses.</p>
+          <p><strong>Ease of use for researchers:</strong>&nbsp; Crowdwave is built by researchers for researchers. The tool will feel familiar to other survey providers meaning that clients can instantly get insights that are usable in business or research context quicker than traditional research methods or using GPT directly.</p>
+          <p><strong>Multiple Large Language models:</strong>&nbsp; Crowdwave sources data from a variety of LLMs so clients always have the most accurate results.</p>
+        </span>
+        <h3 id="results-benchmark">Ways we measure our results and benchmarks</h3>
+        <span>
+          <p>To train our models we use human comparison studies where available. We use industry best practice methodology and benchmarks to compare the results of Crowdwave to human studies. These include:</p>
+          <p><strong>Histogram Overlap Score (Similarity Score):</strong>&nbsp;This score measures how similar two data sets are by calculating the overlapping area when two histograms are placed on top of each other. A score of 1 means Crowdwave perfectly matches real-world observations, while a score of 0 means it is completely off.</p>
+          <p><strong>Root Mean Square Error (RMSE):</strong>&nbsp; This metric tells us, on average, how far Crowdwave's rating is from the human rating. RMSE penalizes larger errors more heavily.</p>
+          <p><strong>Semantic similarity score (Cosine similarity):</strong>&nbsp; of each Crowdwave response is calculated with every response, and the maximum cosine similarity value is stored. The average of all these stored maximums gives you the semantic similarity score for the entire question.</p>
+          <p>For example: 0 indicates no similarity, 1 indicating exact response. A score of 0.84 indicates that on average Crowdwave responses are very similar in meaning to human responses and have a high degree of overlap.</p>
+          <p><strong>Distribution similarity score (Diversity score):</strong>&nbsp; We categorize the human and Crowdwave responses based on topics and plot their distributions. We measure the Kolmogorov-Smirnov (KS) test distribution similarity score between both the distributions and compute it as the distribution similarity score.</p>
+          <p>For example: 0 indicates completely different distributions, while 1 indicates identical distributions. 0.61 indicates moderate to good distribution similarity between both responses. For complex open ended questions, 0.61 is considered a good score.</p>
+        </span>
+        <h3 id="inputs-llm">What inputs and LLMs does Crowdwave use?</h3>
+        <p>Crowdwave combines data from LLM models like OpenAI with its proprietary technology to simulate real human cohorts and segments. This enables Crowdwave to generate diverse responses from thousands of simulated individuals, providing insights that reflect a wide spectrum of human behaviors. We continually improve accuracy and optimize our models by validating results against a wealth of real-world human survey data.</p>
+        <h3 id="crowdwave-limitations">What are Crowdwave's limitations?</h3>
+        <span>
+          <p>Like all LLMs, Crowdwave has limitations, including difficulties in providing feedback on recent events, as its model is based on data up to last year. Additionally, requests involving overly complex audience segments or targeting extremely niche groups may result in less accurate responses.</p>
+          <ol>
+            <li>
+              <p>Overly complex requests such as excessively long questions with numerous scenarios within a single question may yield a poor response.</p>
+            </li>
+            <li>
+              <p>Overly complex Audience and Audience Segments. Crowdwave's model will always provide responses, however, the quality of the results may be impacted if your audience or segment is too complex or theoretical.</p>
+            </li>
+            <li>
+              <p>Requesting large response sizes for extreme niche segments can, in some circumstances, result in responses that seem repetitive.</p>
+            </li>
+          </ol>
+        </span>
+        <h2 id="privacy-section" class="section-header">Privacy Policy</h2>
+        <h3 id="data-management">How does Crowdwave store and manage my data?</h3>
+        <span>
+          <p>Please review our policies <a href="https://app.crowdwave.ai/terms-and-conditions" target="_blank">here</a></p>
+        </span>
+      </div>
+      <div class="sidebar">
+        <h2>Table of Contents</h2>
+        <ul>
+        </ul>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&copy; 2025 Crowdwave</p>
+    </div>
+    <script type="text/javascript">
+      const sections = document.querySelectorAll('.content h2, .content h3');
+      const sidebar = document.querySelector('.sidebar ul');
+      sections.forEach((section, index) => {
+        const id = section.id;
+        const text = section.textContent;
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        if (id.includes('section')) {
+          a.style.fontWeight = 'bold';
+        }
+        a.style.textDecoration = 'none';
+        a.href = `#${id}`;
+        a.textContent = text;
+        li.appendChild(a);
+        sidebar.appendChild(li);
+      });
+    </script>
+  </body>
+</html>
